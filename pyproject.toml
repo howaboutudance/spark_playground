@@ -10,19 +10,7 @@ authors = [{ name = "Michael Penhallegon", email = "mike@hematite.tech" }]
 requires-python = ">=3.12"
 license = "Apache-2.0"
 dependencies = [
-    "dynaconf",
-    "psycopg[binary] >= 3.0",
-]
-[options.packages.find]
-where = "src"
-
-[options.entry_points]
-console_scripts = [
-    "pomo-hatch-server = pomo_hatch.main:server",
-    "pomo-hatch-start = pomo_hatch.main:start",
-    "pomo-hatch-stop = pomo_hatch.main:stop",
-    "pomo-hatch-status = pomo_hatch.main:status",
-    "pomo-hatch-shutdown = pomo_hatch.main:shutdown",
+    "dynaconf"
 ]
 
 [tool.ruff]
@@ -35,6 +23,9 @@ select = [
     "E4", "E7", "E9", 
     "F", "W",
 ]
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
