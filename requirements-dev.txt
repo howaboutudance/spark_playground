@@ -1,0 +1,16 @@
+# packaging libraries
+wheel
+hatchling
+
+# core dependencies
+-e .
+
+# testing + development dependencies
+pytest
+pytest-asyncio
+pytest-cov
+ipython
+ipdb
+
+# linting + formatting
+ruff
