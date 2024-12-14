@@ -20,6 +20,7 @@ build/
 .env.*
 config/*secret*
 config/.*
+.python-version
 
 # Testing
 .coverage
@@ -36,3 +37,4 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+.env

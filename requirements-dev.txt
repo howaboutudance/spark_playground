@@ -3,13 +3,16 @@ wheel
 hatchling
 
 # core dependencies
--e .
+dynaconf
+pyspark
+ipython
 
 # testing + development dependencies
+tox >= 4.21
+tox-pyenv-redux
 pytest
 pytest-asyncio
 pytest-cov
-ipython
 ipdb
 
 # linting + formatting
